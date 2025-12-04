@@ -10,7 +10,9 @@ class HospitalProfile2 extends StatelessWidget {
         slivers: [
           SliverAppBar(
             leading: GestureDetector(
-              onTap: () {},
+              onTap: () {
+                Navigator.pop(context);
+              },
               child: Icon(Icons.arrow_back),
             ),
             expandedHeight: 250,
@@ -44,7 +46,7 @@ class HospitalProfile2 extends StatelessWidget {
                       height: 90,
                       width: 350,
                       decoration: BoxDecoration(
-                        color: Colors.blue[700],
+                        color: Color.fromARGB(631, 99, 79, 239),
                         borderRadius: BorderRadius.circular(10),
                       ),
                       child: Column(
@@ -62,7 +64,7 @@ class HospitalProfile2 extends StatelessWidget {
                               height: 70,
                               width: double.infinity,
                               decoration: BoxDecoration(
-                                color: const Color.fromARGB(255, 0, 72, 154),
+                                color: const Color.fromARGB(231, 20, 1, 142),
                                 borderRadius: BorderRadius.circular(10),
                               ),
                               child: Row(

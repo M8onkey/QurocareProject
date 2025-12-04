@@ -18,7 +18,7 @@ Widget cardHospital(String title, String subtitle, String image, Color color) {
         Text(subtitle),
         SizedBox(height: 25),
         Row(
-          mainAxisAlignment: MainAxisAlignment.end,
+          mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
             ClipRRect(
               borderRadius: BorderRadius.circular(10),
@@ -29,6 +29,24 @@ Widget cardHospital(String title, String subtitle, String image, Color color) {
                 fit: BoxFit.cover,
               ),
             ),
+            Row(
+              children: [
+                Container(
+                  margin: EdgeInsets.only(top: 40),
+                  padding: EdgeInsets.all(8),
+                  decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(20),
+                    gradient: LinearGradient(
+                      begin: AlignmentGeometry.topCenter,
+                      end: AlignmentGeometry.bottomCenter,
+                      stops: [0,2],
+                      colors: [const Color.fromARGB(255, 0, 10, 100),Colors.white]
+                    )
+                  ),
+                  child: Icon(Icons.arrow_forward,color: Colors.white,size: 15,fontWeight: FontWeight.bold,)),
+                  SizedBox(width: 10,)
+              ],
+            )
           ],
         ),
       ],

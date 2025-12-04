@@ -57,8 +57,8 @@ class _HospitalProfileState extends State<HospitalProfile> {
                     child: cardHospital(
                       'Home Doctor',
                       'Consultation',
-                      'hospital_profile1',
-                      selectedIndex == 0 ? Colors.blue[200]! : Colors.grey[200]!,
+                      'services1',
+                      selectedIndex == 0 ? Colors.blue[200]! : Colors.grey[300]!,
                     ),
                   ),
                   GestureDetector(
@@ -67,7 +67,7 @@ class _HospitalProfileState extends State<HospitalProfile> {
                       'Home Nurse',
                       'Service',
                       'hospital_profile2',
-                      selectedIndex == 1 ? Colors.blue[200]! : Colors.grey[200]!,
+                      selectedIndex == 1 ? Colors.blue[200]! : Colors.grey[300]!,
                     ),
                   ),
                 ],
@@ -81,8 +81,8 @@ class _HospitalProfileState extends State<HospitalProfile> {
                     child: cardHospital(
                       'Home Sample',
                       'Consultation',
-                      'hospital_profile1',
-                      selectedIndex == 2 ? Colors.blue[200]! : Colors.grey[200]!,
+                      'services4',
+                      selectedIndex == 2 ? Colors.blue[200]! : Colors.grey[300]!,
                     ),
                   ),
                   GestureDetector(
@@ -90,8 +90,8 @@ class _HospitalProfileState extends State<HospitalProfile> {
                     child: cardHospital(
                       'Home',
                       'PhysioTherapy',
-                      'hospital_profile2',
-                      selectedIndex == 3 ? Colors.blue[200]! : Colors.grey[200]!,
+                      'services5',
+                      selectedIndex == 3 ? Colors.blue[200]! : Colors.grey[300]!,
                     ),
                   ),
                 ],
@@ -105,7 +105,7 @@ class _HospitalProfileState extends State<HospitalProfile> {
                       height: 90,
                       width: double.infinity,
                       decoration: BoxDecoration(
-                        color: Colors.blue[700],
+                        color: Color.fromARGB(631, 99, 79, 239),
                         borderRadius: BorderRadius.circular(10),
                       ),
                       child: Column(
@@ -123,7 +123,7 @@ class _HospitalProfileState extends State<HospitalProfile> {
                               height: 70,
                               width: double.infinity,
                               decoration: BoxDecoration(
-                                color: const Color.fromARGB(255, 0, 72, 154),
+                                color: const Color.fromARGB(231, 20, 1, 142),
                                 borderRadius: BorderRadius.circular(10),
                               ),
                               child: Row(

@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:quorocare_project/hospital_profile/hospital_profile.dart';
 import 'package:quorocare_project/loadingScreens/progress.dart';
+import 'package:quorocare_project/loadingScreens/quicksignIn.dart';
+import 'package:quorocare_project/patient_records/patient.dart';
 import 'package:quorocare_project/services/services.dart';
 import 'package:quorocare_project/signIn/notification.dart';
 import 'package:quorocare_project/signIn/welcomeback.dart';
@@ -50,7 +52,7 @@ class _MyHomePageState extends State<MyHomePage> {
     // fast, so that you can just rebuild anything that needs updating rather
     // than having to individually change instances of widgets.
     return Scaffold(
-      body: SafeArea(child: Notify()),
+      body: HospitalProfile(),
       // This trailing comma makes auto-formatting nicer for build methods.
     );
   }

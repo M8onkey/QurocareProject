@@ -27,8 +27,8 @@ class Notify extends StatelessWidget {
                   Container(
                     padding: EdgeInsets.symmetric(horizontal: 70,vertical: 15),
                     decoration: BoxDecoration(
-                      borderRadius: BorderRadius.circular(15),
-                      color: const Color.fromARGB(200,35, 19, 145)
+                      borderRadius: BorderRadius.circular(10),
+                      color: const Color.fromARGB(231, 20, 1, 142)
                     ),
                     child: Text('Turn on Notification',style: TextStyle(color: Colors.white,fontSize: 20),),
                   ),
